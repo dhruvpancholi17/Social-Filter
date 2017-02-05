@@ -15,7 +15,8 @@ Currently it is build as a minimum viable product, which helps in getting things
 ### Adding keywords
 
 You will find a variable called filterKeyWords in first line, just add all the set of keywords in that variable.
-```markdown
+
+```javascript
 filterKeyWords = [
     ["keyword"],
     ["keyword1","keyword2"],
@@ -23,16 +24,19 @@ filterKeyWords = [
 ```
 
 For e.g. if you don't want to see a post which contains "justin" the variable will look like:
-```markdown
+
+```javascript
 filterKeyWords = [
     ["justin"]];
 ```
 
 If you wan't to filter based on two or more keywords and all of them should be in the post, like "baby beiber" then:
-```markdown
+
+```javascript
 filterKeyWords = [
     ["justin"],
     ["baby", "beiber"]];
 ```
+
 In short filterKeyWords contains all the list of keywords which are used for the purpose of filtering! And all the lists are comma separated.
 
