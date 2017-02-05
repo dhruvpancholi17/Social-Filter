@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Social Filter Chrome Plugin
 
-You can use the [editor on GitHub](https://github.com/dhruvpancholi17/Social-Filter/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can [Social Filter](https://github.com/dhruvpancholi17/Social-Filter/edit/master/README.md) plugin written for chrome to filter out all the unwanted posts in your social media feed.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Currently this only works for LinkedIn, soon it will be available for other sites such as Facebook and Twitter (on popular demand).
 
-### Markdown
+### How to install?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Currently it is build as a minimum viable product, which helps in getting things done. You need to install [Custom JavaScript for websites](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija?hl=en) plugin, post installation follow the following steps:
 
+1. Go to linkedin.com, click on the cjs plugin button and select enable cjs for this host.
+2. In "You can inject your own external scripts or predefined one:" select jquery 2.*
+3. Copy paste from [script.js](https://github.com/dhruvpancholi17/Social-Filter) to the script box and save.
+
+### Adding keywords
+
+You will find a variable called filterKeyWords in first line, just add all the set of keywords in that variable.
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+filterKeyWords = [
+    ["keyword"],
+    ["keyword1","keyword2"],
+    ["keyword1","keyword2","keyword3"]];
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For e.g. if you don't want to see a post which contains "justin" the variable will look like:
+```markdown
+filterKeyWords = [
+    ["justin"]];
+```
 
-### Jekyll Themes
+If you wan't to filter based on two or more keywords and all of them should be in the post, like "baby beiber" then:
+```markdown
+filterKeyWords = [
+    ["justin"],
+    ["baby", "beiber"]];
+```
+In short filterKeyWords contains all the list of keywords which are used for the purpose of filtering! And all the lists are comma separated.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dhruvpancholi17/Social-Filter/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
