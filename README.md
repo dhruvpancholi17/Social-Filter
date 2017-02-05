@@ -1,6 +1,6 @@
 ## Social Filter Chrome Plugin
 
-You can [Social Filter](https://github.com/dhruvpancholi17/Social-Filter/edit/master/README.md) plugin written for chrome to filter out all the unwanted posts in your social media feed.
+You can [Social Filter](https://github.com/dhruvpancholi17/Social-Filter) plugin written for chrome to filter out all the unwanted posts in your social media feed.
 
 Currently this only works for LinkedIn, soon it will be available for other sites such as Facebook and Twitter (on popular demand).
 
