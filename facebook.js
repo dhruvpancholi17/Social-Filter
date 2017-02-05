@@ -25,7 +25,6 @@ function getRawString(str){
 function toBeFiltered(element) {
     if (!element) {return true;}
     article = getRawString(element.html());
-    console.log(article);
     for (var i = 0; i < filterKeyWords.length; i++) {
         for (var j = 0; j < filterKeyWords[i].length; j++) {
             if(article.contains(filterKeyWords[i][j])) return true;
