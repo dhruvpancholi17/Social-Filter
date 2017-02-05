@@ -2,7 +2,7 @@
 
 You can [Social Filter](https://github.com/dhruvpancholi17/Social-Filter) plugin written for chrome to filter out all the unwanted posts in your social media feed.
 
-Currently this only works for LinkedIn, soon it will be available for other sites such as Facebook and Twitter (on popular demand).
+Currently this works for Facebook and LinkedIn, soon it will also be available for Twitter.
 
 ### How to install?
 
@@ -10,7 +10,7 @@ Currently it is build as a minimum viable product, which helps in getting things
 
 1. Go to linkedin.com, click on the cjs plugin button and select enable cjs for this host.
 2. In "You can inject your own external scripts or predefined one:" select jquery 2.*
-3. Copy paste from [script.js](https://github.com/dhruvpancholi17/Social-Filter) to the script box and save.
+3. Copy paste from [linkedin.js](https://github.com/dhruvpancholi17/Social-Filter/blob/master/linkedin.js)/[facebook.js](https://github.com/dhruvpancholi17/Social-Filter/blob/master/facebook.js) to the script box and save.
 
 ### Adding keywords
 
