@@ -8,7 +8,7 @@ Currently this works for Facebook and LinkedIn, soon it will also be available f
 
 Currently it is build as a minimum viable product, which helps in getting things done. You need to install [Custom JavaScript for websites](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija?hl=en) plugin, post installation follow the following steps:
 
-1. Go to linkedin.com, click on the cjs plugin button and select enable cjs for this host.
+1. Go to linkedin.com/facebook.com, click on the cjs plugin button and select enable cjs for this host.
 2. In "You can inject your own external scripts or predefined one:" select jquery 2.*
 3. Copy paste from [linkedin.js](https://github.com/dhruvpancholi17/Social-Filter/blob/master/linkedin.js)/[facebook.js](https://github.com/dhruvpancholi17/Social-Filter/blob/master/facebook.js) to the script box and save.
 
